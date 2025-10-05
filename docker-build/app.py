@@ -15,6 +15,11 @@ orders_collection = db["orders"]
 def create_order():
     data = request.json
     # Insert the order into MongoDB
+    """ 
+        Insert the order into MongoDB
+        for example: '{"product": "Laptop", "price": 1200}'
+        more stuff
+    """
     result = orders_collection.insert_one({
         "product": data["product"],
         "price": data["price"]
