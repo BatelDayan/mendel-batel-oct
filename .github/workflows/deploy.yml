@@ -3,7 +3,7 @@ name:
 on:
   push:
     paths:
-      - docker-build/
+      - 'docker-build/**'
     branches:
       - main
 
